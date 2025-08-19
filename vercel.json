@@ -5,23 +5,10 @@
       "maxDuration": 10
     }
   },
-  "headers": [
+  "redirects": [
     {
-      "source": "/api/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/svg+xml; charset=utf-8"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
+      "source": "/",
+      "destination": "https://github.com/anuraghazra/github-readme-stats"
     }
   ]
 }
